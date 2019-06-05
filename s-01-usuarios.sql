@@ -18,4 +18,8 @@ grant create session to rol_invitado;
 prompt Se crea rol admin
 create role rol_admin;
 grant create session, create table, create view, create synonym,
-create sequence, create trigger, create procedure to rol_admin;
+    create public synonym, create sequence, create trigger, create procedure 
+to rol_admin;
+
+prompt Conectando con el usuario administrador
+connect ps_proy_admin;
