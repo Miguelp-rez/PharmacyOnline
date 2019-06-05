@@ -1,0 +1,21 @@
+VISTAS 3
+Pedido y detalle pedido
+Medicamento con nombre 
+Medicamento con presentacion
+Almacen con sus operaciones
+
+TRIGGERS 3
+Para llenar el historico
+Para actualizar el inventario
+PRUEBAS 3
+
+PROCEDIMIENTOS 2
+Para crear un pedido
+Reporte de almacen con sus operaciones
+PRUEBAS 2
+
+FUNCIONES 3
+Unidades totales en la operacion del almacen
+Obtener fecha de nacimiento, edad de un cliente
+Manejo de datos blob
+PRUEBAS 3
