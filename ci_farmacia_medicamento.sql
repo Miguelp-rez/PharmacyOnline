@@ -37,4 +37,10 @@ insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles,
 insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 373, 2, 11, 18);
 insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 172, 3, 36, 4);
 insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 288, 19, 30, 14);
-insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 248, 8, 31, 9);
+insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 148, 8, 31, 9);
+insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 238, 4, 40, 1);
+insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 123, 8, 31, 9);
+insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 231, 6,1,18);
+insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 235, 16,3, 6);
+insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 432, 17, 18, 4);
+insert into FARMACIA_MEDICAMENTO (farmacia_medicamento_id, unidades_disponibles, medicamento_id, centro_operaciones_id, presentación_medicamento_id) values (farmacia_med_seq.nextval, 137, 17, 20, 20,);
