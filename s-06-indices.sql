@@ -9,7 +9,6 @@ connect pesa_proy_admin
 
 create unique index centro_operaciones_clave_iux on centro_operaciones(clave);
 
-create index empleado_nombre_ix on empleado(lower(nombre));
 create index farmacia_rfc_ix on farmacia(rfc);
 --CON FUNCIONES
 create index empleado_nombre_ix on empleado(lower(nombre));
