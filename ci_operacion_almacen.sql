@@ -1,0 +1,43 @@
+--ENTRADA
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '13/11/2018', 'ENTRADA', 1, 1);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '10/09/2018', 'ENTRADA', 2, 2);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '20/03/2019', 'ENTRADA', 3, 3);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '05/01/2019', 'ENTRADA', 4, 4);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '09/01/2019', 'ENTRADA', 5, 5);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '26/07/2018', 'ENTRADA', 6, 6);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '21/12/2018', 'ENTRADA', 7, 7);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '13/03/2019', 'ENTRADA', 8, 8);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '06/08/2018', 'ENTRADA', 9, 9);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '10/07/2018', 'ENTRADA', 10, 10);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '12/12/2018', 'ENTRADA', 11, 11);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '01/10/2018', 'ENTRADA', 12, 12);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '06/05/2019', 'ENTRADA', 13, 13);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '26/10/2018', 'ENTRADA', 14, 14);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '05/04/2019', 'ENTRADA', 15, 15);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '08/10/2018', 'ENTRADA', 16, 16);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '25/05/2019', 'ENTRADA', 17, 17);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '20/08/2018', 'ENTRADA', 18, 18);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 100, '01/04/2019', 'ENTRADA', 19, 19);
+
+--SALIDA
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '08/10/2018', 'SALIDA', 20, 20);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '03/02/2019', 'SALIDA', 21, 21);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '06/06/2018', 'SALIDA', 22, 22);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '18/10/2018', 'SALIDA', 23, 23);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '30/01/2019', 'SALIDA', 24, 24);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '05/12/2018', 'SALIDA', 25, 25);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '17/08/2018', 'SALIDA', 26, 26);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '17/03/2019', 'SALIDA', 27, 27);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '14/11/2018', 'SALIDA', 28, 28);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '22/11/2018', 'SALIDA', 29, 29);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '13/09/2018', 'SALIDA', 30, 30);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '14/01/2019', 'SALIDA', 31, 31);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '21/11/2018', 'SALIDA', 32, 32);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '28/08/2018', 'SALIDA', 33, 33);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '17/05/2019', 'SALIDA', 34, 34);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '30/06/2018', 'SALIDA', 35, 35);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '12/05/2019', 'SALIDA', 36, 36);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '19/04/2019', 'SALIDA', 37, 37);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '15/10/2018', 'SALIDA', 38, 38);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '16/12/2018', 'SALIDA', 39, 39);
+insert into operacion_almacen (operacion_almacen_id, unidades_totales, fecha_evento, tipo_evento, centro_operaciones_id, empleado_id) values (ope_almacen_seq.nextval, 50, '30/09/2018', 'SALIDA', 40, 40);
