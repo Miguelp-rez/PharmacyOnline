@@ -41,7 +41,7 @@ on e.empleado_id=p.responsable_id
 join status_pedido sp
 on p.status_pedido_id=status_pedido_id
 left join ubicacion u
-on p.ubicacion_id=u.ubicacion_id
+on p.ubicacion_id=u.ubicacion_id;
 
 
 prompt Se conceden permisos al usuario invitado para leer una vista
@@ -49,6 +49,8 @@ grant select on v_gastos_cliente to ps_proy_invitado;
 
 prompt Conectando con el usuario invitado
 connect ps_proy_invitado
+
+create or replace synonym v_gastos_cliente for ps_proy_admin.v_gastos_cliente;
 
 --Mostrar el nombre completo y correo electronico del cliente que mas 
 --dinero ha gastado en medicamentos
