@@ -12,9 +12,9 @@ prompt creando directorio tmp_dir
 create or replace directory tmp_dir as '/tmp/bases';
 --se otorgan permisos para que el usuario jorge_0307 de la BD pueda leer
 --el contenido del directorio
-grant read, write on directory tmp_dir to pesa_proy_admin;
-prompt Contectando con usuario pesa_proy_admin para crear la tabla externa
-connect pesa_proy_admin
+grant read, write on directory tmp_dir to ps_proy_admin;
+prompt Contectando con usuario ps_proy_admin para crear la tabla externa
+connect ps_proy_admin
 show user
 prompt creando tabla externa
 
@@ -31,22 +31,22 @@ create table cliente_ext(
     DIRECCION			VARCHAR2(400)
 )
 
-organization external (
-type oracle_loader
-default directory tmp_dir
-access parameters (
-records delimited by newline
-badfile tmp_dir:'cliente_ext_bad.log'
-logfile tmp_dir:'cliente_ext.log'
-fields terminated by '#'
-lrtrim
-missing field values are null
-(
-cliente_id,nombre,apellido_paterno, apellido_materno,
-num_telefonico, email, rfc, curp, direccion
-)
-)
-location ('cliente_ext.txt')
+organization external(
+    type oracle_loader
+    default directory tmp_dir
+    access parameters (
+        records delimited by newline
+        badfile tmp_dir:'cliente_ext_bad.log'
+        logfile tmp_dir:'cliente_ext.log'
+        fields terminated by '#'
+        lrtrim
+        missing field values are null
+        (
+        cliente_id,nombre,apellido_paterno, apellido_materno,
+        num_telefonico, email, rfc, curp, direccion
+        )
+    )
+    location ('cliente_ext.txt')
 )
 reject limit unlimited;
 --Creanto tmp/bases
@@ -61,7 +61,4 @@ prompt copiando el archivo txt a /tmp/bases
 
 --MOSTRANDO DATOS
 prompt mostrando los datos
-col nombre format a20
-col ap_paterno format a20
-col ap_materno format a20
 select * from cliente_ext;

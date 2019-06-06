@@ -5,7 +5,7 @@
 
 
 prompt iniciando con usuario admin
-connect pesa_proy_admin 
+connect ps_proy_admin 
 
 create unique index centro_operaciones_clave_iux on centro_operaciones(clave);
 
