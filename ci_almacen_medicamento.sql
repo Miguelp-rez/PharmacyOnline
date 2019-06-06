@@ -183,3 +183,43 @@ insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, o
 insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 20, 40, 7);
 insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 15, 40, 14);
 insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 15, 40, 20);
+
+--Operacion 41
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 50, 41, 13);
+
+--Operacion 42
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 15, 42, 6);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 20, 42, 9);
+
+--Operacion 43
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 50, 43, 1);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 40, 43, 2);
+
+--Operacion 44
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 25, 44, 11);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 25, 44, 18);
+
+--Operacion 45
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 80, 45, 20);
+
+--Operacion 46
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 20, 46, 16);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 10, 46, 18);
+
+--Operacion 47
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 10, 47, 6);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 30, 47, 14);
+
+--Operacion 48
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 20, 48, 1);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 20, 48, 20);
+
+--Operacion 49
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 10, 49, 3);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 10, 49, 8);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 20, 49, 14);
+
+--Operacion 50
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 10, 50, 7);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 7, 50, 14);
+insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento, operacion_almacen_id, medicamento_id) values (almacen_med_seq.nextval, 7, 50, 20);

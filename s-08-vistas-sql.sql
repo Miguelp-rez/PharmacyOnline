@@ -31,7 +31,7 @@ create or replace view v_inventario_farmacias(
 
 
 create or replace view v_pedido(
-
+	pedido_id, fecha, folio, importe_total, total_articulos
 ) as select p.pedido_id, p.fecha, p.folio, p.importe_total, sum(dp.unidades_medicamento) as total_articulos
 	from pedido p
 	join detalle_pedido dp 
