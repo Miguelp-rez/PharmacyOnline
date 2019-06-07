@@ -26,7 +26,7 @@ create table cliente_ext(
    NUM_TELEFONICO      NUMBER(10,0),
    EMAIL               VARCHAR2(100),
    RFC                 VARCHAR2(12),
-   CURP                VARCHAR2(16),
+   CURP                VARCHAR2(18),
    DIRECCION            VARCHAR2(400)
 )
 organization external(
@@ -48,7 +48,6 @@ organization external(
 )reject limit unlimited;
 --Creanto tmp/bases
 prompt creando el directorio /tmp/bases en caso de no existir
-!rm -rf /tmp/basess
 !mkdir -p /tmp/bases
 prompt cambiando permisos
 !chmod 777 /tmp/bases
