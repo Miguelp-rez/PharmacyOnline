@@ -6,7 +6,7 @@
 
 set serveroutput on
 create or replace trigger tr_valida_empleado
-  before insert or delete
+  before insert
   on empleado
   for each row
 declare
@@ -21,31 +21,6 @@ begin
       else
         dbms_output.put_line('NUEVO EMPLEADO');
       end if;
-end;
-/
-show errors
-
-
-set serveroutput on
-create or replace trigger tr_valida_empleado2
-  before insert or delete
-  on empleado
-  for each row
-declare
-cursor cur_empleados is
-      select empleado_id, NOMBRE,count(*) from 
-      empleado e
-      join  farmacia f
-      on e.empleado_id=f.gerente_id
-      group by(empleado_id, NOMBRE);
-begin 
-    for cur in cur_empleados loop
-      if :old.empleado_id=cur.empleado_id then
-        raise_application_error(-20012,'Es gerente de alguna farmacia');
-      else
-        dbms_output.put_line('Eliminando empleado');
-      end if;
-    end loop;
 end;
 /
 show errors
