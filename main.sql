@@ -31,5 +31,5 @@ Prompt CONSULTAS
 --TRIGGERS
 @@s-11-tr_existencia_articulos.sql
 @@tr-existencia-medicamentos.sql
-@@s-11-tr-empleados_prueba.sql
+@@s-11-tr_empleados.sql
 

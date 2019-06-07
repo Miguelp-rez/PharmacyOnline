@@ -5,7 +5,7 @@
 
 create or replace function reporte_clientes_csv_fx(
   v_in_cliente_id cliente.cliente_id%type
-) return number is
+) return varchar2 is
 
 v_cliente_id varchar2(10);
 v_num_pedidos varchar2(20);
@@ -42,8 +42,7 @@ set feedback off
 set heading off
 
 spool reporte_clientes_csv.txt
-select reporte_clientes_csv_fx(1)
-from dual;
+select reporte_clientes_csv_fx(1) from dual;
 spool off
 set feedback on
 set heading on
