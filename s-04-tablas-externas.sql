@@ -14,41 +14,40 @@ create or replace directory tmp_dir as '/tmp/bases';
 --el contenido del directorio
 grant read, write on directory tmp_dir to ps_proy_admin;
 prompt Contectando con usuario ps_proy_admin para crear la tabla externa
-connect ps_proy_admin
+connect ps_proy_admin/pesa
 show user
 prompt creando tabla externa
 
-
-create table cliente_ext(
-	CLIENTE_ID          NUMBER(10, 0),
-    NOMBRE              VARCHAR2(40),
-    APELLIDO_PATERNO    VARCHAR2(40),
-    APELLIDO_MATERNO    VARCHAR2(40),
-    NUM_TELEFONICO      NUMBER(12,0),
-    EMAIL               VARCHAR2(100),
-    RFC                 VARCHAR2(12),
-    CURP                VARCHAR2(16),
-    DIRECCION			VARCHAR2(400)
+create table cliente_ext
+(
+   CLIENTE_ID          NUMBER(10),
+   NOMBRE              VARCHAR2(40),
+   APELLIDO_PATERNO    VARCHAR2(40),
+   APELLIDO_MATERNO    VARCHAR2(40),
+   NUM_TELEFONICO      NUMBER(10),
+   EMAIL               VARCHAR2(100),
+   RFC                 VARCHAR2(12),
+   CURP                VARCHAR2(16),
+   DIRECCION			VARCHAR2(400)
 )
 
-organization external(
-    type oracle_loader
-    default directory tmp_dir
-    access parameters (
+ORGANIZATION EXTERNAL (
+    TYPE ORACLE_LOADER
+    DEFAULT DIRECTORY tmp_dir
+    ACCESS PARAMETERS 
+    (
         records delimited by newline
         badfile tmp_dir:'cliente_ext_bad.log'
         logfile tmp_dir:'cliente_ext.log'
-        fields terminated by '#'
+        fields terminated by ','
         lrtrim
         missing field values are null
         (
-        cliente_id,nombre,apellido_paterno, apellido_materno,
-        num_telefonico, email, rfc, curp, direccion
+        CLIENTE_ID,NOMBRE,APELLIDO_PATERNO,APELLIDO_MATERNO,NUM_TELEFONICO,EMAIL,RFC,CURP,DIRECCION    
         )
     )
     location ('cliente_ext.txt')
-)
-reject limit unlimited;
+)reject limit unlimited;
 --Creanto tmp/bases
 prompt creando el directorio /tmp/bases en caso de no existir
 !mkdir -p /tmp/bases

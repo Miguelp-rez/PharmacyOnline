@@ -63,3 +63,6 @@ where gc.gastos_totales=(
   select max(gastos_totales)
   from v_gastos_cliente
 );
+
+
+connect ps_proy_admin/pesa

@@ -977,3 +977,4 @@ insert into DETALLE_PEDIDO (detalle_pedido_id, pedido_id, unidades_medicamento, 
 insert into DETALLE_PEDIDO (detalle_pedido_id, pedido_id, unidades_medicamento, centro_operaciones_id, presentacion_medicamento_id, medicamento_id) values (detalle_pedido_seq.nextval, 7, 26,2,19,14);
 insert into DETALLE_PEDIDO (detalle_pedido_id, pedido_id, unidades_medicamento, centro_operaciones_id, presentacion_medicamento_id, medicamento_id) values (detalle_pedido_seq.nextval, 7, 12,31,20,8);
 
+commit;

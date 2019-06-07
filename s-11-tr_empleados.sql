@@ -23,4 +23,8 @@ begin
       end if;
 end;
 /
+<<<<<<< HEAD
 show errors
+=======
+show errors
+>>>>>>> b9c82c8fe28a1ef5a2028a2492b4c6494f57ed89
