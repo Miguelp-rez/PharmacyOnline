@@ -8,7 +8,7 @@ after insert or update of status_pedido_id on pedido
 for each row
 
 declare
-v_status_id number(2,0);
+v_status_id number(10,0);
 v_fecha_status date;
 v_hist_id number(10,0);
 v_pedido_id number(10,0);
@@ -21,5 +21,7 @@ v_pedido_id := :new.pedido_id;
 
 insert into historico_status_pedido
 (historico_status_pedido_id,status_pedido_id,fecha_status_pedido,pedido_id)
-values(v_status_id,v_fecha_status,v_pedido_id);
+values(v_hist_id,v_status_id,v_fecha_status,v_pedido_id);
 end;
+/
+show errors
