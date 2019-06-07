@@ -6,6 +6,7 @@
 
 --Cargamos los archivos a la base de datos
 --ANTES:Descomprimir el archivo documentos.zip en /tmp
+
 set serveroutput on 
 connect sys/system as sysdba 
 
@@ -80,6 +81,7 @@ begin
 end;
 /
 show errors
---Prompt Invocando procedimiento 
---exec sp_carga_documentos
---commit;
+
+Prompt Invocando procedimiento 
+exec sp_carga_documentos
+commit;
