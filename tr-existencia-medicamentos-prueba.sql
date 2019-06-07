@@ -18,7 +18,7 @@ values (ope_almacen_seq.nextval, 'SALIDA', 100, 20);
 
 insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento,
   operacion_almacen_id, medicamento_id) 
-values (almacen_med_seq.nextval, 50, 51, 20);
+values (almacen_med_seq.nextval, 50, ope_almacen_seq.currval, 20);
 
 
 Prompt OK, prueba 1 exitosa.
@@ -36,7 +36,7 @@ begin
 
   insert into almacen_medicamento (almacen_medicamento_id, unidades_medicamento,
     operacion_almacen_id, medicamento_id) 
-  values (almacen_med_seq.nextval, 60, 51, 20);
+  values (almacen_med_seq.nextval, 60, ope_almacen_seq.currval, 20);
   -- Si se llega a este punto, significa que el trigger no está funcionando, se lanza
   --excepcion
   raise_application_error(-20001,

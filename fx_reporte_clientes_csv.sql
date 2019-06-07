@@ -5,7 +5,7 @@
 
 create or replace function reporte_clientes_csv_fx(
   v_in_cliente_id cliente.cliente_id%type
-) return varchar2 is
+) return number is
 
 v_cliente_id varchar2(10);
 v_num_pedidos varchar2(20);
