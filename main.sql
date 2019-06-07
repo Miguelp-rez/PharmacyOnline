@@ -19,4 +19,17 @@ drop role rol_invitado;
 @@s-08-vistas
 @@tr-historico.sql
 @@s-09-carga-inicial.sql
+Prompt CONSULTAS
+@@s-10-consultas.sql
+
+--FUNCIONES
+@@fx_folios.sql
+@@fx_medicamentos_disponibles.sql
+@@fx_reporte_clientes_csv.sql
+
+
+--TRIGGERS
+@@s-11-tr_existencia_articulos.sql
+@@tr-existencia-medicamentos.sql
+@@s-11-tr-empleados_prueba.sql
 

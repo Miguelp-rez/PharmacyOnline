@@ -11,8 +11,6 @@ Prompt Prueba 1.
 prompt Insertando un registro valido
 Prompt ========================================
 
-
-select * from empleado;
 --EMPLEADO MAYOR A 30 AÑOS
 insert into empleado values(empleado_seq.nextval,'Beatriz','SAD70112324',
   'Sanchez','Diaz',to_date('07/06/2019','dd/mm/yyyy'));

@@ -1,2 +1,7 @@
+select reporte_clientes_csv_fx(1)
+       *
+ERROR at line 1:
+ORA-06502: PL/SQL: numeric or value error: character to number conversion error
+ORA-06512: at "PS_PROY_ADMIN.REPORTE_CLIENTES_CSV_FX", line 28 
 
-1,3,175069.5,56
+

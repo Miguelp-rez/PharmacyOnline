@@ -5,7 +5,7 @@
 
 
 set serveroutput on
-create or replace trigger tr_existencia_medicamentos
+create or replace trigger tr_existencia_articulos
   before insert 
   or update of detalle_pedido_id
   on detalle_pedido
