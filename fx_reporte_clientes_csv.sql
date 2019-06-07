@@ -1,3 +1,8 @@
+--@Autor(es):--Sánchez Díaz María Beatriz
+       --Pérez Quiroz Miguel Angel
+--@Fecha creación: 06/06/2019
+--@Descripción: Funcion para generar archivo en formato csv
+
 create or replace function reporte_clientes_csv_fx(
   v_in_cliente_id cliente.cliente_id%type
 ) return varchar2 is
