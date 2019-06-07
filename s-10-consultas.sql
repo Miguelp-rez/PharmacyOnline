@@ -1,3 +1,4 @@
+
 --@Autor(es):--Sánchez Díaz María Beatriz
        --Pérez Quiroz Miguel Angel
 --@Fecha creación: 06/06/2019
@@ -27,7 +28,6 @@ from empleado e
 join farmacia f
 on e.empleado_id=f.gerente_id
 natural join centro_operaciones co
-on f.centro_operaciones_id=co.centro_operaciones_id
 where es_almacen=1;
 
 --Mostrar el nombre completo de todos los empleados responsables de algun pedido,
@@ -39,7 +39,7 @@ from empleado e
 join pedido p
 on e.empleado_id=p.responsable_id
 join status_pedido sp
-on p.status_pedido_id=status_pedido_id
+on p.status_pedido_id=sp.status_pedido_id
 left join ubicacion u
 on p.ubicacion_id=u.ubicacion_id;
 
@@ -47,11 +47,11 @@ on p.ubicacion_id=u.ubicacion_id;
 prompt Se conceden permisos al usuario invitado para leer una vista
 grant select on v_gastos_cliente to ps_proy_invitado;
 
+
 prompt Conectando con el usuario invitado
 connect ps_proy_invitado
 
 create or replace synonym v_gastos_cliente for ps_proy_admin.v_gastos_cliente;
-
 --Mostrar el nombre completo y correo electronico del cliente que mas 
 --dinero ha gastado en medicamentos
 
