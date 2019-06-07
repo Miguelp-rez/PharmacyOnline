@@ -18,32 +18,30 @@ connect ps_proy_admin/pesa
 show user
 prompt creando tabla externa
 
-create table cliente_ext
-(
-   CLIENTE_ID          NUMBER(10),
+create table cliente_ext(
+   CLIENTE_ID          NUMBER(10,0),
    NOMBRE              VARCHAR2(40),
    APELLIDO_PATERNO    VARCHAR2(40),
    APELLIDO_MATERNO    VARCHAR2(40),
-   NUM_TELEFONICO      NUMBER(10),
+   NUM_TELEFONICO      NUMBER(10,0),
    EMAIL               VARCHAR2(100),
    RFC                 VARCHAR2(12),
-   CURP                VARCHAR2(16),
-   DIRECCION			VARCHAR2(400)
+   CURP                VARCHAR2(18),
+   DIRECCION            VARCHAR2(400)
 )
-
-ORGANIZATION EXTERNAL (
-    TYPE ORACLE_LOADER
-    DEFAULT DIRECTORY tmp_dir
-    ACCESS PARAMETERS 
-    (
-        records delimited by newline
-        badfile tmp_dir:'cliente_ext_bad.log'
-        logfile tmp_dir:'cliente_ext.log'
-        fields terminated by ','
-        lrtrim
-        missing field values are null
+organization external(
+  type oracle_loader
+  default directory tmp_dir
+  access parameters(
+    records delimited by newline
+    badfile tmp_dir: 'cliente_ext_bad.log'
+    logfile tmp_dir: 'cliente_ext.log'
+    fields terminated by ','
+    lrtrim
+    missing field values are null
         (
-        CLIENTE_ID,NOMBRE,APELLIDO_PATERNO,APELLIDO_MATERNO,NUM_TELEFONICO,EMAIL,RFC,CURP,DIRECCION    
+        CLIENTE_ID,NOMBRE,APELLIDO_PATERNO,APELLIDO_MATERNO,NUM_TELEFONICO,
+        EMAIL,RFC,CURP,DIRECCION    
         )
     )
     location ('cliente_ext.txt')
